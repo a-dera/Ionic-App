@@ -1,9 +1,42 @@
-<ion-header>
-  <ion-toolbar>
-    <ion-title>accueil</ion-title>
-  </ion-toolbar>
-</ion-header>
 
 <ion-content>
+  <ion-menu side="start" content-id="main-content">
+    <ion-header>
+      <ion-toolbar translucent>
+        <ion-title>Menu</ion-title>
+      </ion-toolbar>
+    </ion-header>
+    <ion-content>
+      <ion-list>
+        <ion-item>
+          <ion-icon name="people" slot="start"></ion-icon>
+          <ion-label>Etudiant</ion-label>
+        </ion-item>
+        <ion-item>
+          <ion-icon name="people" slot="start"></ion-icon>
+          <ion-label>Enseignant</ion-label>
+        </ion-item>
+        <ion-item>
+          <ion-icon name="options" slot="start"></ion-icon>
+          <ion-label>Paramètres</ion-label>
+        </ion-item>
+       
+      </ion-list>
+    </ion-content>
+  </ion-menu>
+  
+  <div class="ion-page" id="main-content">
+    <ion-header>
+      <ion-toolbar>
+        <ion-buttons slot="start">
+          <ion-menu-button></ion-menu-button>
+        </ion-buttons>
+        <ion-title>Accueil</ion-title>
+      </ion-toolbar>
+    </ion-header>
+    <ion-content class="ion-padding">
+      <!-- <ion-button expand="block" onclick="openMenu()">Menu</ion-button> -->
+    </ion-content>
+  </div>
 
 </ion-content>

@@ -4,6 +4,8 @@ import { FormsModule } from '@angular/forms';
 
 import { IonicModule } from '@ionic/angular';
 
+import { MenuController } from '@ionic/angular';
+
 import { AccueilPageRoutingModule } from './accueil-routing.module';
 
 import { AccueilPage } from './accueil.page';
@@ -17,4 +19,11 @@ import { AccueilPage } from './accueil.page';
   ],
   declarations: [AccueilPage]
 })
-export class AccueilPageModule {}
+export class AccueilPageModule {
+  constructor(private menu: MenuController) { }
+
+  openFirst() {
+    this.menu.enable(true, 'first');
+    this.menu.open('first');
+  }
+}
