@@ -28,6 +28,10 @@ const routes: Routes = [
     path: 'ajout-enseignant',
     loadChildren: () => import('./ajout-enseignant/ajout-enseignant.module').then( m => m.AjoutEnseignantPageModule)
   },
+  {
+    path: 'etudiants',
+    loadChildren: () => import('./etudiants/etudiants.module').then( m => m.EtudiantsPageModule)
+  },
 ];
 
 @NgModule({
