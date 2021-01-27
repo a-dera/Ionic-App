@@ -9,5 +9,45 @@
 </ion-header>
 
 <ion-content>
+<ion-item>
+  <ion-label position="floating">Nom</ion-label>
+  <ion-input></ion-input>
+</ion-item>
+<ion-item>
+  <ion-label position="floating">Prenom</ion-label>
+  <ion-input></ion-input>
+</ion-item>
+<ion-item>
+  <ion-label position="floating">Date de naissance</ion-label>
+  <ion-datetime displayFormat="DD/MM/YYYY" min="1980-01-01" max="2010-01-01"></ion-datetime>
+</ion-item>
+<ion-item>
+  <ion-label>Êtes-vous inscrit?</ion-label>
+  <ion-checkbox color="primary" checked slot="start"></ion-checkbox>
+</ion-item>
 
+<ion-list>
+  <ion-radio-group value="biff">
+    <ion-list-header>
+      <ion-label>Sexe</ion-label>
+    </ion-list-header>
+
+    <ion-item>
+      <ion-label>Masculin</ion-label>
+      <ion-radio slot="start" value="masculin"></ion-radio>
+    </ion-item>
+
+    <ion-item>
+      <ion-label>Féminin</ion-label>
+      <ion-radio slot="start" value="feminin"></ion-radio>
+    </ion-item>
+
+    <ion-item>
+      <ion-label>Non précisé</ion-label>
+      <ion-radio slot="start" value="autres"></ion-radio>
+    </ion-item>
+  </ion-radio-group>
+</ion-list>
+
+<ion-button expand="block" shape="round" fill="outline">Sauvegarder</ion-button>
 </ion-content>
