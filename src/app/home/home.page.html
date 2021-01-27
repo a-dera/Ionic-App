@@ -1,20 +1,28 @@
-<ion-header [translucent]="true">
-  <ion-toolbar>
-    <ion-title>
-      Blank
-    </ion-title>
-  </ion-toolbar>
-</ion-header>
+<ion-content fullscreen class="ion-padding" scroll-y="false">
+  <ion-slides>
 
-<ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Blank</ion-title>
-    </ion-toolbar>
-  </ion-header>
+    <ion-slide>
+      <div class="slide">
+        <img src="./home/slide-4.png" />
+        <h2>Bienvenue 👋 </h2>
+        <p>Vous êtes <b>fatigués</b> de gérer vos fiches manuellement et sur le papier? 
+          </p>
+      </div>
+    </ion-slide>
 
-  <div id="container">
-    <strong>Ready to create an app?</strong>
-    <p>Start with Ionic <a target="_blank" rel="noopener noreferrer" href="https://ionicframework.com/docs/components">UI Components</a></p>
-  </div>
+    <ion-slide>
+      <img src="./slide-2.png" />
+      <h2>Objectif</h2>
+      <p>Vous rechercher un outil <b>fiable, intuitif et efficace</b>
+        pour gerer vos fiches?</p>
+    </ion-slide>
+
+    <ion-slide>
+      <img src="./slide-4.png" />
+      <h2>Vous êtes au bon endroit</h2>
+      <ion-button fill="clear" routerLink ="./accueil">Continuer 😍 <ion-icon slot="end" name="arrow-forward"></ion-icon>
+      </ion-button>
+    </ion-slide>
+
+  </ion-slides>
 </ion-content>
