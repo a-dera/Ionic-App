@@ -1,4 +1,4 @@
-import { AngularFireDatabaseModule } from '@angular/fire';
+import { AngularFireDatabase } from '@angular/fire/database';
 import { Component, OnInit } from '@angular/core';
 
 @Component({
