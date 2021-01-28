@@ -21,10 +21,6 @@
   <ion-label position="floating">Date de naissance</ion-label>
   <ion-datetime displayFormat="DD/MM/YYYY" min="1980-01-01" max="2010-01-01"></ion-datetime>
 </ion-item>
-<ion-item>
-  <ion-label>Êtes-vous inscrit?</ion-label>
-  <ion-checkbox color="primary" checked slot="start"></ion-checkbox>
-</ion-item>
 
 <ion-list>
   <ion-radio-group value="biff">
@@ -48,6 +44,18 @@
     </ion-item>
   </ion-radio-group>
 </ion-list>
+<ion-item>
+  
+    <ion-label>Statut d'inscription</ion-label>
+    <ion-select>
+    <ion-select-option>Inscrit</ion-select-option>
+    <ion-select-option>Non inscrit</ion-select-option>
+  </ion-select>
+</ion-item>
+<ion-item>
+  <ion-label>Associer un compte</ion-label>
+  <ion-checkbox color="primary" checked slot="start"></ion-checkbox>
+</ion-item>
 
 <ion-button expand="block" shape="round" fill="outline">Sauvegarder</ion-button>
 </ion-content>
