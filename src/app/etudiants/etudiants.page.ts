@@ -1,3 +1,4 @@
+import { AngularFireDatabaseModule } from '@angular/fire';
 import { Component, OnInit } from '@angular/core';
 
 @Component({
@@ -6,10 +7,22 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./etudiants.page.scss'],
 })
 export class EtudiantsPage implements OnInit {
+  nom:string;
+  prenom:string;
+  statut:boolean;
+  sexe:string;
+  compte:string;
 
-  constructor() { }
+  constructor(public db: AngularFireDatabase) { }
 
-  ngOnInit() {
+  add() {
+    this.db.list('Etudiant/').push({
+      'nom': this.nom,
+      'prenom': this.prenom,
+      'sexe':this.sexe,
+      'compte': this.compte,
+      'statut':this.statut
+    });
   }
 
 }
