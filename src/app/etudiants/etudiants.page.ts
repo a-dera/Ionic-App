@@ -12,6 +12,7 @@ export class EtudiantsPage implements OnInit {
   statut:boolean;
   sexe:string;
   compte:string;
+  naissance:date;
 
   constructor(public db: AngularFireDatabase) { }
 
@@ -21,7 +22,8 @@ export class EtudiantsPage implements OnInit {
       'prenom': this.prenom,
       'sexe':this.sexe,
       'compte': this.compte,
-      'statut':this.statut
+      'statut':this.statut,
+      'naissance':this.naissance
     });
   }
 
