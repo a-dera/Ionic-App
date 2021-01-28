@@ -12,6 +12,18 @@
 
 <ion-content>
 <h2>Liste des etudiants</h2>
+
+<ion-card *ngFor="let e of etudiants">
+  <ion-item>
+    <ion-label>{{e.nom}}</ion-label>
+    <ion-label>{{e.prenom}}</ion-label>
+    <ion-label>{{e.naissance}}</ion-label>
+    <ion-label>{{e.sexe}}</ion-label>
+    <ion-label>{{e.compte}}</ion-label>
+    <ion-label>{{e.statut}}</ion-label>
+  </ion-item>
+</ion-card>
+
 <ion-fab vertical="bottom" horizontal="end" slot="fixed">
   <ion-fab-button routerLink="/etudiants">
     <ion-icon name="add-circle"></ion-icon>

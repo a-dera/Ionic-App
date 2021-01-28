@@ -1,6 +1,5 @@
 import { AngularFireDatabase } from '@angular/fire/database';
 import { Component, OnInit } from '@angular/core';
-
 @Component({
   selector: 'app-etudiants',
   templateUrl: './etudiants.page.html',

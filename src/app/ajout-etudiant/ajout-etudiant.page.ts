@@ -1,6 +1,5 @@
-import { Component, OnInit } from '@angular/core';
 import {AngularFireDatabase} from '@angular/fire/database';
-
+import { Component, OnInit } from '@angular/core';
 @Component({
   selector: 'app-ajout-etudiant',
   templateUrl: './ajout-etudiant.page.html',
